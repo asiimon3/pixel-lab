@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pixel Lab: viñetas animadas en pixel art, ejemplos, preguntas y autoevaluación para la asignatura Fundamentos de IA aplicada del Máster en Inteligencia Artificial." />
+    <title>Pixel Lab · Fundamentos de IA aplicada</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230f1528'/%3E%3Crect x='3' y='9' width='3' height='4' fill='%23f28c38'/%3E%3Crect x='7' y='6' width='3' height='7' fill='%234f86e0'/%3E%3Crect x='11' y='3' width='3' height='10' fill='%236fdc9f'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>try { var t = localStorage.getItem('pl-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Mostrar índice" aria-expanded="false" aria-controls="sidebar">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <a class="brand" href="#/" aria-label="Pixel Lab, inicio">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>Pixel Lab</strong><small>Fundamentos de IA aplicada</small></span>
+      </a>
+      <div class="topbar-progress" id="topProgress" aria-label="Progreso"></div>
+      <nav class="topbar-links" aria-label="Secciones">
+        <a href="#/" data-nav="home">Inicio</a>
+        <a href="#/glosario" data-nav="glossary">Glosario</a>
+      </nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema claro u oscuro" title="Tema claro / oscuro">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 1h2v2H7zM7 13h2v2H7zM1 7h2v2H1zM13 7h2v2h-2zM3 3h2v2H3zM11 11h2v2h-2zM11 3h2v2h-2zM3 11h2v2H3zM5 5h6v6H5z"/></svg>
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="Índice del curso">
+        <div class="search">
+          <label class="sr-only" for="searchInput">Buscar concepto</label>
+          <input id="searchInput" type="search" placeholder="Buscar concepto o término…" autocomplete="off" />
+        </div>
+        <nav id="sideNav"></nav>
+        <div class="side-foot">
+          <a href="#/glosario" class="side-link">Glosario completo</a>
+          <button type="button" class="side-link" id="resetProgress">Reiniciar mi progreso</button>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim" hidden></div>
+
+      <main id="main" tabindex="-1"></main>
+    </div>
+
+    <footer class="footer">
+      <span>Pixel Lab · Cámara de Comercio de Granada · Máster en Inteligencia Artificial</span>
+      <span>Antonio Simón Martín · Kais Bouadi Molina</span>
+      <span>Ejemplos simulados: no contienen datos personales reales.</span>
+    </footer>
+
+    <script src="js/engine.js"></script>
+    <script src="js/kit.js"></script>
+    <script src="js/content/b1.js"></script>
+    <script src="js/content/b2.js"></script>
+    <script src="js/content/b3.js"></script>
+    <script src="js/content/b4.js"></script>
+    <script src="js/content/b5.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
